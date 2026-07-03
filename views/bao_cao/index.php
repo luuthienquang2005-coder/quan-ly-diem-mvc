@@ -44,7 +44,7 @@
 
     <div class="menu-reports">
         <a href="index.php?controller=BaoCao&action=truotMon" class="red">
-            Sinh viên Trượt môn<br><span style="font-size:12px; font-weight:normal; color:#666;">Danh sách nợ môn (F)</span>
+            Sinh viên Thi Lại<br><span style="font-size:12px; font-weight:normal; color:#666;">Danh sách nợ môn (F)</span>
         </a>
         <a href="index.php?controller=BaoCao&action=hocBong" class="green">
             Xét Học bổng<br><span style="font-size:12px; font-weight:normal; color:#666;">Sinh viên Xuất sắc / Giỏi</span>

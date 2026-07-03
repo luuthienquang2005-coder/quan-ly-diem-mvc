@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: mvc_web
+    ports:
+      - "80:80" # Ánh xạ cổng (port mapping) để truy cập web
+    volumes:
+      - ./:/var/www/html/ # Đồng bộ trực tiếp code từ ngoài vào trong container
+    depends_on:
+      - database
+
+  database:
+    image: mysql:latest
+    container_name: mvc_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: quanlydiem_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql # Gắn volume để lưu dữ liệu bền vững
+
+volumes:
+  db_data: # Khai báo volume lưu trữ điểm số sinh viên
+  

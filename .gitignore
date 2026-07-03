@@ -23,3 +23,20 @@
 /app/Config/core.php
 /app/Config/database.php
 /vendors/*
+
+
+# --- CÁC CẤU HÌNH BỔ SUNG CHO DỰ ÁN PHP THUẦN & DOCKER ---
+
+# Bỏ qua file cấu hình biến môi trường (thường chứa mật khẩu kết nối database)
+.env
+
+# Bỏ qua thư mục chứa ảnh hoặc tài liệu do người dùng upload lên
+/uploads/
+
+# Bỏ qua các file rác của hệ điều hành (đặc biệt nếu nhóm có người dùng MacOS)
+.DS_Store
+
+# LƯU Ý QUAN TRỌNG CHO THI VẤN ĐÁP: 
+# Bỏ qua thư mục mount volume chứa toàn bộ dữ liệu thật của MySQL Docker
+mysql_data/
+db_data/

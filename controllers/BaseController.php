@@ -14,7 +14,7 @@ class BaseController {
             require_once $viewFile;
         } else {
             // Thông báo lỗi nếu không tìm thấy file view
-            die("Lỗi hệ thống: Không tìm thấy file giao diện '$viewFile'");
+            die("Lỗi hệ thống: Không  thấy file giao diện '$viewFile'");
         }
     }
 
